@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styleform.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+        <header class="cabecalho">
+        <img src="Imagens/logo.png" alt="logo do site">
+           <nav class="menu">
+           <a target="_blank" href="Index.html">Home</a>
+           <a target="_blank" href="blog.html">Blog</a>
+           <a target="_blank" href="form.html">Formulário</a>
+           </nav>
+       </header>
+       <main class="container">
+            <section id="user" class="user">
+                <h1>RELATÓRIO DE DESPESAS</h1>
+                <h4>Dados do solicitante</h4>
+                <form class="solicitante">
+                    <p>
+                        Solicitante:
+                      <br><input type="text" name="name" id="name" class="name">
+                    </p>
+                    <p>
+                        E-mail:
+                        <br><input type="email" name="email" id="email" class="email">
+                    </p>
+                    <p>
+                        Empresa:
+                        <br><input type="text" name="empresa" id="empresa" class="empresa">
+                    </p>
+                    <p>
+                        Area:
+                        <br><input type="text" name="area" id="area" class="area">
+                    </p>
+                </form>
+            </section>
+            <section id="itens" class="itens">
+                        <div class="upCase">
+                            <h6>Despesas</h6>
+                            <div id="bIncluir" class="bIncluir">
+                                <p> +Incluir</p>
+                            </div>
+                            <div id="despesasTop" class="despesasTop">
+                                <p>Excluir</p>
+                                <p>Categoria</p>
+                                <p>Descrição</p>
+                                <p>Vlr. Unitário</p>
+                                <p>Quantidade</p>
+                                <p>Vlr. Total</p>
+                            </div>
+                            <div id="despesasGeral" class="despesasGeral">
+                                <div id="despesas" class="despesas">
+                                    <input type="button" value="X" class="botaoExcluir">
+                                    <select name="Categoria" id="categoria" class="categoria">
+                                        <option value="hospedagem">Hospedagem</option>
+                                        <option value="pedagio">Pedagio</option>
+                                        <option value="combustivel">Combustível</option>
+                                        <option value="alimentacao">Alimentação</option>
+                                        <option value="alimentacao">Outros</option>
+                                    </select>
+                                    <input type="text" name="descricao_" id="descricao_" class="descricao">
+                                    <input type="text" name="vlruni_" id="vlruni_" class="vlruni" value="" onchange="calcularTotal(0)">
+                                    <input type="number" name="quantidade_" id="quantidade_" class="quantidade" value="1" onchange="calcularTotal(0)">
+                                    <p id="vlrtotal_" class="vlrtotal" name="vlrtotal_"></p> 
+                                </div>
+                            </div>
+                        </div>                  
+            </section>
+            <div class="totalgeraldespesas">
+                <label for="totalGeral">Valor total:</label>
+                <input type="text" name="totalGeral" id="totalGeral" class="totalGeral" readonly>  
+            </div>
+            <section class="botoes">
+                <a href="form.html" class="bCancelar" id="bCancelar">Cancelar</a>
+                <input type="button" value="Enviar" class="bEnviar" id="bEnviar" onclick="bEnviar()">
+            </section>
+       </main>
+       <footer class="socialmedia">
+        <div>
+           <a href="https://www.instagram.com/theus_ed/" target="_blank" title="Meu Instagram">
+               <img src="Imagens/insta.png" alt="linkedin">
+           </a>
+           <a href="https://www.linkedin.com/in/matheus-eduardo-219458180/" target="_blank" title="Meu LinkedIn">
+               <img src="Imagens/linkedin.png" alt="linkedin">
+           </a> 
+           <a href="https://github.com/theusedcarv" target="_blank" title="Meu Perfil no GitHub">
+               <img src="Imagens/github.png" alt="linkedin">
+           </a>       
+        </div>
+        <h6>Copyright ©2021 Todos os direitos reservados</h6>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>

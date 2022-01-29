@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Serif:ital,wght@0,200;0,300;0,400;1,400&family=Roboto+Mono:ital,wght@0,100;0,300;0,600;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Serif:ital,wght@0,200;0,300;0,400;1,400&family=Righteous&family=Roboto+Mono:ital,wght@0,100;0,300;0,600;0,700;1,400;1,500&family=Staatliches&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-image: linear-gradient(to right, #aad6ce 0%, #9face6 100%);
+    height: 100%;
+}
+.cabecalho{
+    max-width: 1280px;
+    min-width: 150px;
+    max-height: 500px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.menu{
+    display: flex;
+    gap: 17px;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: stretch;
+    margin: 10px;
+
+}
+.cabecalho > img{
+    max-width: 70px;
+    max-height: 70px; 
+    min-width: 40px;  
+    min-height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: 4px 4px 4px rgba(26, 12, 79, 0.8);
+}
+.cabecalho .menu a{
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    border: 2px ridge #b7cced;
+    border-radius: 6px;
+    padding: 4px;
+    box-shadow: 2px 3px 2px rgba(26, 12, 79, 0.8);
+    text-decoration: none;
+
+}
+
+.menu a:hover{
+    background-color: #8d95eb;
+}
+.container{
+    border-top: 2px solid #b7f2f7;
+    padding-top: 50px;
+    max-width: 100vw;
+}
+#user{
+    background-color: #d7f5f4;
+    margin: 40px;
+    border-top: 1px solid #d9e0fc; 
+    border-left: 1px solid #d9e0fc; 
+    border-right: 1px solid #4d3c8f; 
+    border-bottom: 1px solid #4d3c8f; 
+    border-radius: 15px;
+    padding: 10px 0 10px 0;
+    box-shadow: 2px 2px 2px #130a36;
+}
+.user h1{
+    margin: 40px 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #01002e;
+    border: 2px solid #b7cced;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #130a36;
+    font-size: 35px;
+}
+.user h4{
+    margin: 40px 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #01002e;
+    font-size: 25px;
+}
+.solicitante{
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.solicitante p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.solicitante input{
+    width: 70vw;
+    border-radius: 15px;
+    height: 25px;
+    border: 2px black solid;
+    padding: 4px
+}
+.itens{
+    background-color: #d7f5f4;
+    margin: 40px;
+    border-top: 1px solid #d9e0fc; 
+    border-left: 1px solid #d9e0fc; 
+    border-right: 1px solid #4d3c8f; 
+    border-bottom: 1px solid #4d3c8f; 
+    border-radius: 15px;
+    padding: 10px 0 10px 0;
+    box-shadow: 2px 2px 2px #130a36;
+    
+}
+.upCase{
+    text-align: right;
+}
+.itens div h6 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.bIncluir{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(46, 199, 0);
+    border: 1px solid #d9e0fc;
+    box-shadow: 2px 2px 2px #130a36;
+    border-radius: 10px;
+    position: relative;
+    bottom: 35px;
+    left: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+.despesasTop{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.despesasGeral{
+    display: flex;
+    flex-direction: column;
+}
+.despesas{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+.botaoExcluir{ 
+    width: 80px;
+    height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: red;
+    border: 2x solid white;
+    border-radius: 5px;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    left: -100px;
+    margin: 4px;
+}
+.categoria{
+    padding: 4px;
+    border-radius: 5px;
+    margin: 4px;
+    position: relative;
+    right: 68px;
+}
+.descricao{
+    padding: 4px;
+    border-radius: 5px;
+    width: 200px;
+    position: relative;
+    right: 70px;
+}
+.vlruni{
+    padding: 4px;
+    border-radius: 5px;
+    width: 80px;
+    margin: 4px;
+    position: relative;
+    left: -60px;
+}
+.quantidade{
+    padding: 4px;
+    border-radius: 5px;
+    width: 80px;
+    margin: 4px;
+    position: relative;
+    left: 25px;
+
+}
+.vlrtotal{
+    width: 100px;
+    height: 28px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    right: -85px;
+
+}
+.bIncluir p {
+    position: relative;
+    top: 5px;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.botoes{
+    background-color: #d7f5f4;
+    margin: 40px;
+    border-top: 1px solid #d9e0fc; 
+    border-left: 1px solid #d9e0fc; 
+    border-right: 1px solid #4d3c8f; 
+    border-bottom: 1px solid #4d3c8f; 
+    border-radius: 15px;
+    padding: 10px 0 10px 0;
+    box-shadow: 2px 2px 2px #130a36;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    gap: 20px;
+    justify-content: flex-end;
+}
+.totalgeraldespesas{
+    width: 300px;
+    height: 80px;
+    border-top: 1px solid #d9e0fc; 
+    border-left: 1px solid #d9e0fc; 
+    border-right: 1px solid #4d3c8f; 
+    border-bottom: 1px solid #4d3c8f; 
+    background-color: #d7f5f4;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #130a36;
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.totalgeraldespesas label{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
+.totalgeraldespesas input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.bCancelar{
+    background-color: rgb(204, 1, 1);
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    box-shadow: 2px 2px 2px #130a36;
+    text-shadow: 2px 2px 2px black;
+    margin: 10px;
+    text-align: center;
+}
+.bCancelar{
+    padding-top: 12px;
+}
+.bEnviar{
+    background-color: rgb(2, 247, 2);
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    box-shadow: 2px 2px 2px #130a36;
+    text-shadow: 2px 2px 2px black;
+    margin: 10px;
+}
+.socialmedia{
+    margin: 40px auto;
+    padding-top: 80px;
+    border-top: 2px solid #b7f2f7;
+}
+.socialmedia h6{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.socialmedia div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.socialmedia div a img{
+    width: 30px;
+    height: 30px;
+}
