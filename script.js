@@ -21,7 +21,9 @@ function botaoIncluir(){
 }
 $("#despesasGeral").on("click",".botaoExcluir", function(){
     $(this).parents('.despesas').remove()
-})
+    calcularTotalGeral()
+}
+)
 
 function calcularTotal(linha){
     var idlinha = linha == 0 ? "" : linha 
